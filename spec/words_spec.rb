@@ -1,11 +1,7 @@
 require('rspec')
 require('words')
+#require('definitions')
 
-describe(Word) do
-  before() do
-    Word.clear()
-  end
-end
 
 describe("#single_word") do
 	it('returns a single word from the Words list') do 
@@ -20,6 +16,13 @@ describe("#id") do
       expect(test_word.id()).to(eq(1))
   end
 end
+
+# describe("#word_definitions") do
+#     it("initially returns an empty array of definitions for single words") do
+#       test_word = Word.new("Ruby")
+#       expect(test_word.word_definitions()).to(eq([]))
+#     end
+# end
 
   describe('.all') do
     it("words list is empty at first") do
