@@ -21,11 +21,11 @@ describe("#id") do
   end
 end
 
-#   describe('.all') do
-#     it("words list is empty at first") do
-#       expect(Word.all()).to(eq([]))
-#   end
-# end
+  describe('.all') do
+    it("words list is empty at first") do
+      expect(Word.all()).to(eq([]))
+  end
+end
 
 # describe('#save') do
 #     it("adds a word to the array of saved words") do
