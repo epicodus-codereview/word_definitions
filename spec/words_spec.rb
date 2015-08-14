@@ -17,41 +17,41 @@ describe("#id") do
   end
 end
 
-# describe("#word_definitions") do
+# describe("#word_definition") do
 #     it("initially returns an empty array of definitions for single words") do
 #       test_word = Word.new("Ruby")
-#       expect(test_word.word_definitions()).to(eq([]))
+#       expect(test_word.word_definition()).to(eq([]))
 #     end
 # end
 
-  describe('.all') do
-    it("words list is empty at first") do
-      expect(Word.all()).to(eq([]))
+describe('.all') do
+  it("words list is empty at first") do
+    expect(Word.all()).to(eq([]))
   end
 end
 
 describe('#save') do
-    it("adds a word to the array of saved words") do
-      test_word = Word.new("Ruby")
-      test_word.save()
-      expect(Word.all()).to(eq([test_word]))
+  it("adds a word to the array of saved words") do
+    test_word = Word.new("Ruby")
+    test_word.save()
+    expect(Word.all()).to(eq([test_word]))
   end
 end
 
 describe(".clear") do
-    it("empties all saved words") do
-      Word.new("Ruby").save()
-      Word.clear()
-      expect(Word.all()).to(eq([]))
+  it("empties all saved words") do
+    Word.new("Ruby").save()
+    Word.clear()
+    expect(Word.all()).to(eq([]))
   end
 end
 
 describe(".find") do
-    it("returns a word by its id number") do
-      test_word = Word.new("Ruby")
-      test_word.save()
-      test_word2 = Word.new("Code")
-      test_word2.save()
-      expect(Word.find(test_word.id())).to(eq(test_word))
+  it("returns a word by its id number") do
+    test_word = Word.new("Ruby")
+    test_word.save()
+    test_word2 = Word.new("Code")
+    test_word2.save()
+    expect(Word.find(test_word.id())).to(eq(test_word))
   end
 end
