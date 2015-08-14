@@ -35,20 +35,20 @@ describe('#save') do
   end
 end
 
-# describe(".clear") do
-#     it("empties all saved words") do
-#       Word.new("Ruby").save()
-#       Word.clear()
-#       expect(Word.all()).to(eq([]))
-#   end
-# end
+describe(".clear") do
+    it("empties all saved words") do
+      Word.new("Ruby").save()
+      Word.clear()
+      expect(Word.all()).to(eq([]))
+  end
+end
 
-# describe(".find") do
-#     it("returns a word by its id number") do
-#       test_word = Word.new("Ruby")
-#       test_word.save()
-#       test_word2 = Word.new("Code")
-#       test_word2.save()
-#       expect(Word.find(test_word.id())).to(eq(test_word))
-#   end
-# end
+describe(".find") do
+    it("returns a word by its id number") do
+      test_word = Word.new("Ruby")
+      test_word.save()
+      test_word2 = Word.new("Code")
+      test_word2.save()
+      expect(Word.find(test_word.id())).to(eq(test_word))
+  end
+end
