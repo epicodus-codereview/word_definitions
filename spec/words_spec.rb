@@ -27,13 +27,13 @@ end
   end
 end
 
-# describe('#save') do
-#     it("adds a word to the array of saved words") do
-#       test_word = Word.new("Ruby")
-#       test_word.save()
-#       expect(Word.all()).to(eq([test_word]))
-#   end
-# end
+describe('#save') do
+    it("adds a word to the array of saved words") do
+      test_word = Word.new("Ruby")
+      test_word.save()
+      expect(Word.all()).to(eq([test_word]))
+  end
+end
 
 # describe(".clear") do
 #     it("empties all saved words") do
